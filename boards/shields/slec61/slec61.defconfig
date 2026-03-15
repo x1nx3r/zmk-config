@@ -1,6 +1,6 @@
 if SHIELD_SLEC61
 
 config ZMK_KEYBOARD_NAME
-    default "Poor Man's Huntsman"
+    default "Udin's Keeb"
 
 endif
