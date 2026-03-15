@@ -1,0 +1,77 @@
+#include <physical_layouts.dtsi>
+
+/ {
+    slec61_physical_layout: slec61_physical_layout {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+        kscan = <&kscan0>;
+        keys  //                   w     h      x      y   rot  rx   ry
+            = <&key_physical_attrs  100   100      0      0    0   0    0>  // R0C0  ESC
+            , <&key_physical_attrs  100   100    100      0    0   0    0>  // R0C1  1
+            , <&key_physical_attrs  100   100    200      0    0   0    0>  // R0C2  2
+            , <&key_physical_attrs  100   100    300      0    0   0    0>  // R0C3  3
+            , <&key_physical_attrs  100   100    400      0    0   0    0>  // R0C4  4
+            , <&key_physical_attrs  100   100    500      0    0   0    0>  // R0C5  5
+            , <&key_physical_attrs  100   100    600      0    0   0    0>  // R0C6  6
+            , <&key_physical_attrs  100   100    700      0    0   0    0>  // R0C7  7
+            , <&key_physical_attrs  100   100    800      0    0   0    0>  // R0C8  8
+            , <&key_physical_attrs  100   100    900      0    0   0    0>  // R0C9  9
+            , <&key_physical_attrs  100   100   1000      0    0   0    0>  // R0C10 0
+            , <&key_physical_attrs  100   100   1100      0    0   0    0>  // R0C11 -
+            , <&key_physical_attrs  100   100   1200      0    0   0    0>  // R0C12 =
+            , <&key_physical_attrs  200   100   1300      0    0   0    0>  // R0C13 BKSP
+
+            , <&key_physical_attrs  150   100      0    100    0   0    0>  // R1C0  TAB
+            , <&key_physical_attrs  100   100    150    100    0   0    0>  // R1C1  Q
+            , <&key_physical_attrs  100   100    250    100    0   0    0>  // R1C2  W
+            , <&key_physical_attrs  100   100    350    100    0   0    0>  // R1C3  E
+            , <&key_physical_attrs  100   100    450    100    0   0    0>  // R1C4  R
+            , <&key_physical_attrs  100   100    550    100    0   0    0>  // R1C5  T
+            , <&key_physical_attrs  100   100    650    100    0   0    0>  // R1C6  Y
+            , <&key_physical_attrs  100   100    750    100    0   0    0>  // R1C7  U
+            , <&key_physical_attrs  100   100    850    100    0   0    0>  // R1C8  I
+            , <&key_physical_attrs  100   100    950    100    0   0    0>  // R1C9  O
+            , <&key_physical_attrs  100   100   1050    100    0   0    0>  // R1C10 P
+            , <&key_physical_attrs  100   100   1150    100    0   0    0>  // R1C11 [
+            , <&key_physical_attrs  100   100   1250    100    0   0    0>  // R1C12 ]
+            , <&key_physical_attrs  150   100   1350    100    0   0    0>  // R1C13 BSLH
+
+            , <&key_physical_attrs  175   100      0    200    0   0    0>  // R2C0  CAPS
+            , <&key_physical_attrs  100   100    175    200    0   0    0>  // R2C1  A
+            , <&key_physical_attrs  100   100    275    200    0   0    0>  // R2C2  S
+            , <&key_physical_attrs  100   100    375    200    0   0    0>  // R2C3  D
+            , <&key_physical_attrs  100   100    475    200    0   0    0>  // R2C4  F
+            , <&key_physical_attrs  100   100    575    200    0   0    0>  // R2C5  G
+            , <&key_physical_attrs  100   100    675    200    0   0    0>  // R2C6  H
+            , <&key_physical_attrs  100   100    775    200    0   0    0>  // R2C7  J
+            , <&key_physical_attrs  100   100    875    200    0   0    0>  // R2C8  K
+            , <&key_physical_attrs  100   100    975    200    0   0    0>  // R2C9  L
+            , <&key_physical_attrs  100   100   1075    200    0   0    0>  // R2C10 ;
+            , <&key_physical_attrs  100   100   1175    200    0   0    0>  // R2C11 '
+            , <&key_physical_attrs  225   100   1275    200    0   0    0>  // R2C13 ENTER
+
+            , <&key_physical_attrs  225   100      0    300    0   0    0>  // R3C0  LSHFT
+            , <&key_physical_attrs  100   100    225    300    0   0    0>  // R3C1  Z
+            , <&key_physical_attrs  100   100    325    300    0   0    0>  // R3C2  X
+            , <&key_physical_attrs  100   100    425    300    0   0    0>  // R3C3  C
+            , <&key_physical_attrs  100   100    525    300    0   0    0>  // R3C4  V
+            , <&key_physical_attrs  100   100    625    300    0   0    0>  // R3C5  B
+            , <&key_physical_attrs  100   100    725    300    0   0    0>  // R3C6  N
+            , <&key_physical_attrs  100   100    825    300    0   0    0>  // R3C7  M
+            , <&key_physical_attrs  100   100    925    300    0   0    0>  // R3C8  ,
+            , <&key_physical_attrs  100   100   1025    300    0   0    0>  // R3C9  .
+            , <&key_physical_attrs  100   100   1125    300    0   0    0>  // R3C10 /
+            , <&key_physical_attrs  100   100   1225    300    0   0    0>  // R3C11 FN
+            , <&key_physical_attrs  175   100   1325    300    0   0    0>  // R3C13 RSHFT
+
+            , <&key_physical_attrs  125   100      0    400    0   0    0>  // R4C0  LCTRL
+            , <&key_physical_attrs  125   100    125    400    0   0    0>  // R4C1  LGUI
+            , <&key_physical_attrs  125   100    250    400    0   0    0>  // R4C2  LALT
+            , <&key_physical_attrs  625   100    375    400    0   0    0>  // R4C5  SPACE
+            , <&key_physical_attrs  125   100   1000    400    0   0    0>  // R4C9  RALT
+            , <&key_physical_attrs  125   100   1125    400    0   0    0>  // R4C12 MENU
+            , <&key_physical_attrs  250   100   1250    400    0   0    0>  // R4C13 RCTRL
+            ;
+    };
+};
