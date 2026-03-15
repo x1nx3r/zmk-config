@@ -1,6 +1,6 @@
 if SHIELD_SLEC61
 
 config ZMK_KEYBOARD_NAME
-    default "Udin's Keeb"
+    default "Keeb"
 
 endif
