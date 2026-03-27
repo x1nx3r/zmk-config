@@ -1,0 +1,10 @@
+file_format: "1"
+id: slec61
+name: Keeb
+type: shield
+url: https://github.com/x1nx3r/zmk-config
+requires:
+  - pro_micro
+features:
+  - keys
+  - studio
